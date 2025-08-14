@@ -1,0 +1,30 @@
+/* Quizzes 페이지 전용 스타일 */
+.quizzes-page {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* 퀴즈 카드 호버 효과 개선 */
+.quiz-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* 애니메이션 효과 */
+.quiz-card {
+  transition: all 0.3s ease;
+}
+
+/* 배경 오버레이 */
+.quizzes-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}

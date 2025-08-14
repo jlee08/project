@@ -1,0 +1,28 @@
+{
+  "short_name": "Cosmotree",
+  "name": "Cosmotree - Astronomy Learning Platform",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "32x32 24x24 16x16",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/logo.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/logo.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1e1b4b",
+  "background_color": "#0f0c29"
+}

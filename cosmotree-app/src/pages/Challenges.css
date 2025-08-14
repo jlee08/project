@@ -1,0 +1,45 @@
+/* src/pages/Challenges.css */
+.challenges-page {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.challenge-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.challenge-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.challenge-card .line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 배경 이미지가 없는 경우 기본 그라데이션 */
+.challenges-page:not([style*="background-image"]) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* 로딩 애니메이션 */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.loading-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
